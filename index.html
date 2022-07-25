@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Cadastro de Jogadores de Player´s Game</h1>
+    <br><br>
+    <div class="box">
+        <form action="https://formsubmit.co/diegorafaelreivax@gmail.com" method="post" enctype="multipart/form-data">
+           
+    <label for="nome"><b>NOME:</b></label>
+    <input type="text" name="nome" id="nome" required>
+    <br><br>
+    <label for="email"><b>E-MAIL:</b></label>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+    <label for="foto"><b>FOTO:</b></label>
+    <input type="file" name="foto" id="foto" accept=".jpg, .png, .jpeg">
+    <br><br>
+    <span><b>GENERO:</b></span>
+    <input type="radio" name="gereno" id="m" value="m"required>
+    <label for="m">M</label>
+    <input type="radio" name="gereno" id="f" value="f">
+    <label for="f">F</label>
+    <input type="radio" name="gereno" id="m" value="o">
+    <label for="o">Outros</label>
+    <br><br>
+    <label for="estado"><b>ESTADO:</b></label>
+    <select name="estado" id="estado" required>
+        <option value="">Escolha o seu estado</option>
+        <option value="ba">BAHIA</option>
+        <option value="ce">CEARA</option>
+        <option value="rj">RIO DE JANEIRO</option>
+        <option value="sp">SÃO PAULO</option>
+    </select>
+    <br><br>
+
+    <label for="comentario"><b>Comentário:</b></label><br>
+    <textarea name="comentario" id="comentario" >
+    </textarea><br><br>
+
+    <input type="submit" value="Enviar" name="submit">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+    <input type="hidden" name="_template" value="table">
+
+
+
+    </form> 
+</div>
+</body>
+</html>
+
+
